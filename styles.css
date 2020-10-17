@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: manrope1;
+    font-size: 13px;
+}
+@font-face{
+    font-family: manrope1;
+    src: url(Manrope/Manrope-VariableFont_wght.ttf);
+    font-weight: 300;
+}
+#container{
+    box-shadow: 7px 7px 3px lightgrey;
+    margin: 10% auto;
+    border-radius: 5px;
+    background-color: white;
+}
+img{
+    float: left;
+    clear: right;
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.tooltip{
+    background-color: hsl(214, 17%, 51%);
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    width:30%;
+    padding: 5px 10px;
+    position: relative;
+    bottom: 150px;
+    left: 530px;
+    visibility: hidden;
+
+}
+#avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+strong{
+    font-size: 15px;
+    font-weight: 700;
+}
+#text2{
+    position: relative;
+    top: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+#share{
+    position: relative;
+    top: -10px;
+    left: 150px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.profile{
+    width: 100%;
+    height: 90px;
+}
+.link{
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    bottom: 23px;
+    left: 90px;
+    margin-left: 5px;
+}
+@media screen and (min-width:1440px){
+    #container{
+        width: 710px;
+    height: 300px;
+    }
+    #words{
+        padding: 40px 20px ;
+        text-align: justify;
+        margin-right: 20px;
+    }
+    
+   
+    #bold-text{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    #norm-paragraph{
+        font-weight: 500;
+    }
+   
+    
+    #text2{
+        font-size: 16px;
+        display: block;
+        letter-spacing: 5px;
+        margin: auto 5px;
+        font-weight: 700;
+    }
+    #share-2{
+        visibility: hidden !important; 
+    }
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 1439px)
+{
+    #container{
+        height: 500px;
+        width: 300px;
+        border-radius: 7px;
+        position: relative;
+    }
+    img{
+        display: block;
+        float: none;
+        width: 300px;
+        height: 200px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0;
+        margin-bottom: 5px;
+    }
+    #words{
+        padding: 20px;
+        text-align: justify;
+        margin-right: 0;
+    }
+    #bold-text{
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 20px;
+        margin: 10px;
+    }
+    #norm-paragraph{
+        margin: 10px;
+    }
+    #avatar{
+        display: inline-block;
+        margin-right: 0;
+    }
+    .tooltip{
+        background-color: hsl(214, 17%, 51%);
+        height: 60px;
+        color: white;
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        padding: 15px 0px 10px 25px;
+        display: flex;
+    }
+    #share{
+        position: relative;
+        left: 30px;
+        top: -20px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    #text{
+        display: inline-block;
+        margin-left: 10px;
+        position: relative;
+        bottom: 10px;
+    }
+    .profile{
+        width: 100%;
+        height: 90px;
+        margin: 10px 30px;
+    }
+    .link{
+        font-size: 25px;
+        color: white;
+        display: inline-block;
+        margin: 5px;
+        position: relative;
+        bottom: 2px;
+        left: 15px;
+    }
+    #share-2{
+        border-radius: 100%;
+        cursor: pointer;
+        visibility: hidden;
+        position: relative;
+        left: 50px;
+        top: 15px;
+        background-color: white;
+    }
+    #text2{
+        font-size: 16px;
+        display: inline-block;
+        letter-spacing: 5px;
+        font-weight: 700;
+        position: relative;
+        bottom: 10px;
+        margin-top: 0;
+    }
+}
